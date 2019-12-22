@@ -2,15 +2,15 @@
 % declare parameters for a VW GTI with 4 passengers
 % to the MATLAB workspace
 
-% Authors: John Alsterda & Nathan Speilberg for Stanford ME227
-
+% Original Authors: John Alsterda & Nathan Speilberg for Stanford ME227
+% Additions by : Adit Desai, Ashar Alam and Kshitij Kumbar
 g = 9.81;                       % [m/s^2]  gravity
 
 %% vehicle parameters
 veh.m  = 1926.2;                % [kg]     mass
 veh.Iz = 2763.49;               % [kg-m^2] rotational inertia
 veh.a  = 1.264;                 % [m]      distance from CoM to front axle
-veh.b  = 1.367;                 % [m]      distance from C0M to rear axle
+veh.b  = 1.367;                 % [m]      distance from CoM to rear axle
 veh.L  = veh.a + veh.b;         % [m]      wheelbase
 veh.Wf = veh.m*(veh.b/veh.L);   % [kg]     front axle weight
 veh.Wr = veh.m*(veh.a/veh.L);   % [kg]     rear axle weight
